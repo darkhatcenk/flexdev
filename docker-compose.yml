@@ -1,0 +1,37 @@
+services:
+    flexdev:
+        container_name: flexdev
+        restart: always
+        working_dir: /var/www/html
+        extra_hosts:
+            - host.docker.internal:host-gateway
+        networks:
+            - flexdev
+        depends_on:
+            - postgres
+            - redis
+            - soketi
+    postgres:
+        image: postgres:15-alpine
+        container_name: flexdev-db
+        restart: always
+        networks:
+            - flexdev
+    redis:
+        image: redis:7-alpine
+        container_name: flexdev-redis
+        restart: always
+        networks:
+            - flexdev
+    soketi:
+        container_name: flexdev-realtime
+        extra_hosts:
+            - host.docker.internal:host-gateway
+        restart: always
+        networks:
+            - flexdev
+networks:
+    flexdev:
+        name: flexdev
+        driver: bridge
+        external: false

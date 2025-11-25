@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "setup": "./scripts/conductor-setup.sh",
+        "run": "docker rm -f flexdev flexdev-minio-init flexdev-realtime flexdev-minio flexdev-testing-host flexdev-redis flexdev-db flexdev-mail flexdev-vite; spin up; spin down"
+    },
+    "runScriptMode": "nonconcurrent"
+}
