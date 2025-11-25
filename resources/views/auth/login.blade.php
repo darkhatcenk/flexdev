@@ -2,9 +2,12 @@
     <section class="bg-gray-50 dark:bg-base">
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
             <div class="w-full max-w-md space-y-8">
-                <div class="text-center space-y-2">
-                    <h1 class="!text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                        FlexDEV
+                <div class="text-center space-y-4">
+                    <div class="flex justify-center">
+                        <img src="/assets/flexdev-logo.svg" alt="FlexDEV by CloudFlex" title="FlexDEV" class="h-16 w-auto" />
+                    </div>
+                    <h1 class="!text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                        Sign in to FlexDEV
                     </h1>
                 </div>
 

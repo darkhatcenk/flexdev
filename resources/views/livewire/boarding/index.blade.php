@@ -6,8 +6,11 @@
         <div class="flex flex-col items-center w-full space-y-8">
             @if ($currentState === 'welcome')
                 <div class="w-full max-w-2xl text-center space-y-8">
-                    <div class="space-y-4">
-                        <h1 class="text-4xl font-bold lg:text-6xl">Welcome to FlexDEV</h1>
+                    <div class="space-y-6">
+                        <div class="flex justify-center">
+                            <img src="/assets/flexdev-logo.svg" alt="FlexDEV by CloudFlex" title="FlexDEV" class="h-20 w-auto" />
+                        </div>
+                        <h1 class="text-4xl font-bold lg:text-5xl">Welcome to FlexDEV</h1>
                         <p class="text-lg lg:text-xl dark:text-neutral-400">
                             Connect your first server and start deploying in minutes
                         </p>
